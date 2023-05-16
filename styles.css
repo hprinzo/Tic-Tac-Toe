@@ -1,0 +1,64 @@
+h1
+{
+    font-family: "Permanent Marker", cursive;
+}
+.cell
+{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#gameContainer
+{
+    padding-top: 80px;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+#cellContainer
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+footer 
+{
+    color: black;
+    font-size: 1.2rem;
+    width: 90vw;
+    min-height: 50px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer > a 
+{
+    position: absolute;
+    right: 1rem;
+    transition: all 0.4s;
+
+    display: flex;
+    align-items: center;
+}
+
+footer > a:hover 
+{
+    transform: rotateY(180deg);
+}
